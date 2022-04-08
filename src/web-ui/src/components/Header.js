@@ -6,7 +6,7 @@ import { retryWrapper } from "../utils";
 
 import AddUserModal from "./AddUserModal";
 import RekognitionButton from "./RekognitionButton";
-
+import Logo from "../img/vep-logo.png";
 import "./Header.css";
 
 const Header = ({ addUser, readyToStream, signedIn, toggleRekognition }) => {
@@ -28,7 +28,7 @@ const Header = ({ addUser, readyToStream, signedIn, toggleRekognition }) => {
   return (
     <Navbar bg="dark" expand="lg">
       <Navbar.Brand>
-        <div className="awslogo" />
+        <img src={Logo} className="veplogo" alt=""></img>
       </Navbar.Brand>
       <Navbar.Toggle />
       {(userEmail || authError) && (

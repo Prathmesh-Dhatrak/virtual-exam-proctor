@@ -1,7 +1,6 @@
 {
-  "name": "amazon-rekognition-virtual-proctor",
+  "name": "virtual-exam-proctor",
   "version": "1.0.0",
-  "private": true,
   "scripts": {
     "build": "npm run webui-build && npm run cfn-build && npm run webui-package",
     "cfn-build": "npm run cfn-ensure-dist && cfn-flip -c -n -l src/cfn/template.yaml templates/template.yaml && npm run cfn-lambdas-dist && npm run cfn-copy-lambda",
@@ -21,14 +20,6 @@
     "webui-package": "cd src/web-ui/build && zip -r ../../../frontend.zip .",
     "zip": "zip -r `npm run echo-version --silent`.zip -@ < ci/include.lst"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aws-samples/amazon-rekognition-virtual-proctor.git"
-  },
-  "bugs": {
-    "url": "https://github.com/aws-samples/amazon-rekognition-virtual-proctor/issues"
-  },
-  "homepage": "https://github.com/aws-samples/amazon-rekognition-virtual-proctor#readme",
   "devDependencies": {
     "js-yaml": "3.13.1",
     "node-yaml": "4.0.1"

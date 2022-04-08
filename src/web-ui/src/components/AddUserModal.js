@@ -55,8 +55,8 @@ const AddUserModal = ({ onSave }) => {
         </Modal.Header>
         <Modal.Body>
           <p>
-            By uploading a picture and associating it with a name, Amazon
-            Rekognition can recognize that person.
+            By uploading a picture and associating it with a name, The System
+            can recognize that person.
           </p>
           <hr />
           <Alert
